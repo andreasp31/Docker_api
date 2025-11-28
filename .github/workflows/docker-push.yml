@@ -11,7 +11,7 @@ on:
   workflow_dispatch: # Permite ejecutar manualmente
 
 env:
-  DOCKER_IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/docker_api
+  DOCKER_IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/api_docker
   DOCKER_TAG: latest
 
 jobs:
@@ -45,4 +45,4 @@ jobs:
         run: |
           echo "Imagen construida y subida exitosamente:"
           echo "  - Imagen: ${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }}"
-          echo "  - Docker Hub: https://hub.docker.com/r/${{ secrets.DOCKER_USERNAME }}/docker_api"
+          echo "  - Docker Hub: https://hub.docker.com/r/${{ secrets.DOCKER_USERNAME }}/api_docker"
