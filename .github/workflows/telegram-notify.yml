@@ -14,5 +14,5 @@ jobs:
         run: |
           curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage \
           -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
-          -d text="Nuevo push en <b>${{ github.repository }}</b> por <b>${{ github.actor }}</b> Rama: <b>${{ github.ref }} </b> Mensaje: <b> <i>${{ github.event.head_commit.message }}</i>" \
+          -d text="✔️​ Nuevo push en <b>${{ github.repository }}</b> por <b>${{ github.actor }}</b> en rama <b>${{ github.ref }}</b> Mensaje: <i>${{ github.event.head_commit.message }}</i>" \
           -d parse_mode=HTML
