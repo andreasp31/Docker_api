@@ -11,7 +11,9 @@
 \usepackage{listings}
 \usepackage{array}
 \usepackage{xcolor}
+\usepackage{minted}
 \usepackage{enumitem}
+\usepackage{fancyvrb}
 \usepackage[backend=biber,style=numeric]{biblatex}
 \addbibresource{bibliografia.bib}
 \geometry{margin=2.5cm}
@@ -387,5 +389,55 @@ Por último para ver que todo está correcto, vamos a DockerHub y debería salir
 \begin{center}
   \includegraphics[height=7cm]{images/docker11.png}
 \end{center}
+
+
+\section{Notificación Action}
+Para crear un GitHub Actions que nos notifique cada vez que realizamos un push en el repositorio por ejemplo vía Telegram, tenemos que realizar los siguientes pasos:
+\begin{itemize}
+  \item Creamos nuestro Bot en telegram, para ello tenemos que buscar @BotFather y le damos un nombre al bot y un nombre de usuario. Al crearlo nos genera un Token y necesitamos también también el id del chat para mandar las notificación. Para ello le mandamos a nuestro bot cualquier mensaje. Y si nos dirigimos a href{https://api.telegram.org/bot<miToken>/getUpdates} nos sale un JSON y obtenemos el id de ahí.
+  \begin{center}
+  \includegraphics[height=6cm]{images/fototelegram3png.png}
+  \end{center}
+  \item Ahora en los ajustes del repositorio de GitHub creamos nuevas variables de entorno, el id y el token que es mediante lo que va a acceder el bot de telegram.
+  \begin{center}
+  \includegraphics[height=1.5cm]{images/fotogithub.png}
+  \end{center}
+  \item Luego creamos un nuevo archivo .yml en nuestra carpeta workflows llamado "telegram-notify.yml". Dentro del archivo vamos a añadir lo siguiente:
+\vspace{0.5cm}
+\begin{lstlisting}[style=javascript]
+name: Notify Telegram on Push
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mandar notificacin al pushear
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{secrets.TELEGRAM_TOKEN}} 
+          /sendMessage\
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d text=" Aqui va todo lo que nos interesa mostrar 
+          (no lo puse porque no me deja latex ponerlo comentado) \
+          -d parse_mode=HTML
+          
+\end{lstlisting}
+\end{itemize}
+
+\begin{itemize}
+  \item Hacemos un commit y un push del nuevo archivo. Si todo está correcto, en el apartado de Actions se ejecutó automáticamente el workflow que creamos.
+  \begin{center}
+  \includegraphics[height=6cm]{images/fotogithub2.png}
+  \end{center}
+  \item Al mismo tiempo, ya recibimos a través del Bot un mensaje de telegram indicando que se ha pusheado algo en el repositorio.
+  \begin{center}
+  \includegraphics[height=4cm]{images/fototelegram.jpg}
+  \end{center}
+\end{itemize}
 
 \end{document}
