@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  28 NOV 2025 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,15 +586,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 [2]
-<images/Dockercarpetas.png, id=35, 221.32687pt x 217.5628pt>
+<images/Dockercarpetas.png, id=45, 221.32687pt x 217.5628pt>
 File: images/Dockercarpetas.png Graphic file (type png)
 <use images/Dockercarpetas.png>
-Package pdftex.def Info: images/Dockercarpetas.png  used on input line 66.
+Package pdftex.def Info: images/Dockercarpetas.png  used on input line 68.
 (pdftex.def)             Requested size: 221.32631pt x 217.56227pt.
  (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Overfull \hbox (0.5987pt too wide) in paragraph at lines 102--103
+Overfull \hbox (0.5987pt too wide) in paragraph at lines 104--105
 []\T1/cmr/m/n/12 Archivo ru-tas.js, está com-puesto por los End-Points (GET,POST). GET para obtener
  []
 
@@ -603,89 +603,122 @@ Overfull \hbox (0.5987pt too wide) in paragraph at lines 102--103
 [3 <./images/Dockercarpetas.png>]
 
 [4]
-Overfull \hbox (0.35126pt too wide) in paragraph at lines 188--189
+Overfull \hbox (0.35126pt too wide) in paragraph at lines 190--191
 []\T1/cmr/m/n/12 Archivo docker-compose.yml con-tiene unos ser-vi-cios definidos, ser-vi-cio "api"(nuestra
  []
 
 
 
 [5]
-<images/docker3.png, id=187, 808.52063pt x 109.1578pt>
+<images/docker3.png, id=197, 808.52063pt x 109.1578pt>
 File: images/docker3.png Graphic file (type png)
 <use images/docker3.png>
-Package pdftex.def Info: images/docker3.png  used on input line 226.
+Package pdftex.def Info: images/docker3.png  used on input line 228.
 (pdftex.def)             Requested size: 421.49414pt x 56.9055pt.
-<images/docker1.png, id=188, 789.70032pt x 577.40718pt>
+<images/docker1.png, id=198, 789.70032pt x 577.40718pt>
 File: images/docker1.png Graphic file (type png)
 <use images/docker1.png>
-Package pdftex.def Info: images/docker1.png  used on input line 267.
+Package pdftex.def Info: images/docker1.png  used on input line 269.
 (pdftex.def)             Requested size: 466.97954pt x 341.43306pt.
 
-Overfull \hbox (11.73543pt too wide) in paragraph at lines 267--268
+Overfull \hbox (11.73543pt too wide) in paragraph at lines 269--270
  [] 
  []
 
 
 
 [6 <./images/docker3.png>]
-<images/docker2.png, id=215, 892.83563pt x 66.2475pt>
+<images/docker2.png, id=225, 892.83563pt x 66.2475pt>
 File: images/docker2.png Graphic file (type png)
 <use images/docker2.png>
-Package pdftex.def Info: images/docker2.png  used on input line 272.
+Package pdftex.def Info: images/docker2.png  used on input line 274.
 (pdftex.def)             Requested size: 498.5132pt x 36.98866pt.
 
-Overfull \hbox (43.26909pt too wide) in paragraph at lines 272--273
+Overfull \hbox (43.26909pt too wide) in paragraph at lines 274--275
  [] 
  []
 
 
 
 [7 <./images/docker1.png> <./images/docker2.png>]
-<images/docker5.png, id=223, 1444.64719pt x 467.49657pt>
+<images/docker5.png, id=233, 1444.64719pt x 467.49657pt>
 File: images/docker5.png Graphic file (type png)
 <use images/docker5.png>
-Package pdftex.def Info: images/docker5.png  used on input line 281.
+Package pdftex.def Info: images/docker5.png  used on input line 283.
 (pdftex.def)             Requested size: 483.59058pt x 156.49014pt.
 
-Overfull \hbox (28.34647pt too wide) in paragraph at lines 281--282
+Overfull \hbox (28.34647pt too wide) in paragraph at lines 283--284
  [] 
  []
 
-<images/docker6.png, id=224, 1444.64719pt x 593.96906pt>
+<images/docker6.png, id=234, 1444.64719pt x 593.96906pt>
 File: images/docker6.png Graphic file (type png)
 <use images/docker6.png>
-Package pdftex.def Info: images/docker6.png  used on input line 292.
+Package pdftex.def Info: images/docker6.png  used on input line 294.
 (pdftex.def)             Requested size: 484.42824pt x 199.16928pt.
 
-Overfull \hbox (29.18413pt too wide) in paragraph at lines 292--293
+Overfull \hbox (29.18413pt too wide) in paragraph at lines 294--295
  [] 
  []
 
 
 
-[8 <./images/docker5.png> <./images/docker6.png>] (documentacion_docker.aux)
+[8 <./images/docker5.png> <./images/docker6.png>]
+Overfull \hbox (19.3761pt too wide) in paragraph at lines 306--307
+[]\T1/cmr/m/n/12 Variables de en-torno que se al-ma-ce-nan en GitHub Se-crets, que nece-sitare-mos "DOCKER
+ []
+
+
+
+[9]
+<images/docker8.png, id=288, 796.47563pt x 527.72156pt>
+File: images/docker8.png Graphic file (type png)
+<use images/docker8.png>
+Package pdftex.def Info: images/docker8.png  used on input line 368.
+(pdftex.def)             Requested size: 386.48466pt x 256.0748pt.
+<images/docker9.png, id=289, 1263.97218pt x 446.41782pt>
+File: images/docker9.png Graphic file (type png)
+<use images/docker9.png>
+Package pdftex.def Info: images/docker9.png  used on input line 376.
+(pdftex.def)             Requested size: 402.80142pt x 142.26378pt.
+
+
+[10 <./images/docker8.png>]
+<images/docker10.png, id=304, 1053.1847pt x 632.3625pt>
+File: images/docker10.png Graphic file (type png)
+<use images/docker10.png>
+Package pdftex.def Info: images/docker10.png  used on input line 382.
+(pdftex.def)             Requested size: 426.48926pt x 256.0748pt.
+<images/docker11.png, id=305, 921.4425pt x 422.32782pt>
+File: images/docker11.png Graphic file (type png)
+<use images/docker11.png>
+Package pdftex.def Info: images/docker11.png  used on input line 388.
+(pdftex.def)             Requested size: 434.55435pt x 199.16928pt.
+
+
+[11 <./images/docker9.png> <./images/docker10.png> <./images/docker11.png>] (documentacion_docker.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `documentacion_docker.out' has not changed.
-(rerunfilecheck)             Checksum: 3D856A92EA3756DB4DBEAD79E2880BB9;706.
+(rerunfilecheck)             Checksum: AF9CF7DA5895E258ECA867B1AF287D76;972.
 Package logreq Info: Writing requests to 'documentacion_docker.run.xml'.
 \openout1 = `documentacion_docker.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19308 strings out of 468130
- 330907 string characters out of 5430633
- 1432773 words of memory out of 5000000
- 47582 multiletter control sequences out of 15000+600000
- 634674 words of font info for 55 fonts, out of 8000000 for 9000
+ 19458 strings out of 468130
+ 333208 string characters out of 5430633
+ 1432777 words of memory out of 5000000
+ 47675 multiletter control sequences out of 15000+600000
+ 635449 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,792b,2139s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1000.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on documentacion_docker.pdf (8 pages, 430690 bytes).
+ <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1000.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on documentacion_docker.pdf (11 pages, 611619 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 228 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

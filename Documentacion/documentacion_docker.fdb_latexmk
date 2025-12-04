@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber documentacion_docker"] 0 "documentacion_docker.bcf" "documentacion_docker.bbl" "documentacion_docker" 1764350223.44723 0
+["biber documentacion_docker"] 0 "documentacion_docker.bcf" "documentacion_docker.bbl" "documentacion_docker" 1764859312.4154 0
   "bibliografia.bib" 0 -1 0 ""
   "documentacion_docker.bcf" 0 -1 0 "pdflatex"
   (generated)
   "documentacion_docker.bbl"
   "documentacion_docker.blg"
   (rewritten before read)
-["pdflatex"] 1764350221.47093 "c:/Users/andre/Desktop/2CS_DAM/Digitalizacion-Afundmiento/docker_api/Documentacion/documentacion_docker.tex" "documentacion_docker.pdf" "documentacion_docker" 1764350223.44873 0
+["pdflatex"] 1764859309.73048 "c:/Users/andre/Desktop/2CS_DAM/Digitalizacion-Afundmiento/docker_api/Documentacion/documentacion_docker.tex" "documentacion_docker.pdf" "documentacion_docker" 1764859312.4176 0
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763334711 82507 a9eef8696c92627b87e9975edea03b2a ""
+  "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1761150035 40136 b53dff6086d36317c256f5bd70a158da ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1760557312 49100 2346a0bba0100023c8f80b300f8ba6c8 ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1761092133 14880 7d3069c6bdfe2e9892d937913485fdb9 ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1760557310 28440 e363b059a1123e69b8745145d0619c03 ""
@@ -17,6 +18,7 @@
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1758905794 14064 7c8c6e7332d338a8dd3d0d08caffb54e ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1000.pk" 1764342639 9492 b8dcdef50b2af75b29945db7c0af7ac0 ""
   "C:/Users/andre/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758905659 13286966 359a98f375e0b7bcbdd17f78c024e348 ""
+  "C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0600.tfm" 993062116 3160 116e21835795bb29209ae8bb4682382f ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
@@ -100,18 +102,22 @@
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1749468414 15698 f5f20b24886bb50156054c53e19b13fd ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/andre/Desktop/2CS_DAM/Digitalizacion-Afundmiento/docker_api/Documentacion/documentacion_docker.tex" 1764350220 8591 acd76d48c2e58be986206b775468cb45 ""
-  "documentacion_docker.aux" 1764350222 742 dba4cfc3ca96513931e21b825fe4672c "pdflatex"
+  "c:/Users/andre/Desktop/2CS_DAM/Digitalizacion-Afundmiento/docker_api/Documentacion/documentacion_docker.tex" 1764859309 12227 1ac87cc4be459373e81622e9d84b72c5 ""
+  "documentacion_docker.aux" 1764859311 980 b3244d2a2751e8ad819e19599ee0342d "pdflatex"
   "documentacion_docker.bbl" 0 -1 0 "biber documentacion_docker"
-  "documentacion_docker.out" 1764350222 706 3d856a92ea3756db4dbead79e2880bb9 "pdflatex"
-  "documentacion_docker.run.xml" 1764350222 2419 a694d292072cfdbc6cd5d66c1050596b "pdflatex"
-  "documentacion_docker.tex" 1764350220 8591 acd76d48c2e58be986206b775468cb45 ""
+  "documentacion_docker.out" 1764859311 972 af9cf7da5895e258eca867b1af287d76 "pdflatex"
+  "documentacion_docker.run.xml" 1764859311 2419 a694d292072cfdbc6cd5d66c1050596b "pdflatex"
+  "documentacion_docker.tex" 1764859309 12227 1ac87cc4be459373e81622e9d84b72c5 ""
   "images/Dockercarpetas.png" 1764174634 10656 b81db7cc473d664802dbc97c4a8fe40f ""
   "images/docker1.png" 1764104922 106976 7f2cae13a4fddf5b0ac6cb6acc8da8dc ""
+  "images/docker10.png" 1764685457 59037 44db146d520b86828892d2ddda85f50c ""
+  "images/docker11.png" 1764685604 72827 7ca645483f460f524f1ec392e51cfc6c ""
   "images/docker2.png" 1764104952 14719 3b1ea7dcc37aa9c3e26e9510950b3638 ""
   "images/docker3.png" 1764104979 23085 5f793f60c5f14cf5326943f8f68057ef ""
   "images/docker5.png" 1764105120 141750 bc1507d08628ecdf1eb6106be765d3f2 ""
   "images/docker6.png" 1764105608 202736 7fc35f9b25a91277f3c53fc3445b76ee ""
+  "images/docker8.png" 1764682849 57197 57f96a6d389e3efc3f83a5e5b39009b8 ""
+  "images/docker9.png" 1764685361 60783 7c12d1448992d1ff4fd80fa4bb688aa9 ""
   (generated)
   "documentacion_docker.aux"
   "documentacion_docker.bcf"
