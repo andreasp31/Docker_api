@@ -16,10 +16,10 @@ const uri = process.env.MONGO_URI;
 export async function conectarBD(){
     try{
         await mongoose.connect(uri,{});
-        console.log("Base de datos conectada con éxito! Esto es para la prueba");
+        console.log("Base de datos conectada con éxito! ");
     }
     catch(error){
-        console.log("Error conectándose a la nueva base de datos", error);
+        console.log("Error conectándose a la nueva base de datos para la prueba", error);
     }
 }
 
