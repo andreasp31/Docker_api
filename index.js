@@ -19,7 +19,7 @@ export async function conectarBD(){
         console.log("Base de datos conectada con éxito! ");
     }
     catch(error){
-        console.log("Error conectándose a la nueva base de datos para la prueba", error);
+        console.log("Error conectándose a la nueva base de datos para la prueba a ver si funciona", error);
     }
 }
 
