@@ -1,0 +1,156 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{bibliografia.bib}
+\geometry{margin=2.5cm}
+
+
+\title{Documentación de Coolify}
+\author{Andrea Sofía Pais Dos Santos}
+\date{\today}
+
+\begin{document}
+\setlength{\droptitle}{0.4\textheight} 
+\maketitle
+\thispagestyle{empty}
+\newpage 
+
+
+\vspace{5cm}
+\section{Índice}
+
+\begin{enumerate}[start=2]
+    \item Instalación Coolify y Ngrok .................................................. página 3
+    \item Creación de un proyecto ....................................................... página 4
+    \item Puente inverso ......................................................................  página 7
+    \item Despliegue continuo .............................................................. página 7
+
+    
+\end{enumerate}
+\newpage
+
+\section{Instalación Coolify y Ngrok}
+
+En la máquina virtual de Ubuntu instalamos primero "curl" para poder luego instalar "coolify". Para instalar coolify buscamos coolify en el buscador y nos da un comando que nos permite instalar desde terminal.
+
+\begin{center}
+    \includegraphics[height=7cm]{images/unbuntu.png}
+\end{center}
+
+Al tener instalado "coolify" vamos a cambiar el adaptador de la máquina virtual a modo puente.
+
+\begin{center}
+    \includegraphics[height=7cm]{images/unbuntu2.png}
+\end{center}
+
+Y esto nos va a dar la ip que vamos a tener que usar para poder acceder a coolify desde fuera conectándonos desde "http://<laIp>:8000". Esto nos abre una ventana para crear una cuenta en "coolify".
+
+\begin{center}
+    \includegraphics[height=7cm]{images/unbuntu3.png}
+\end{center}
+
+Vamos a seguir más o menos los mismos pasos para instalar "ngrok". Accedemos en la máquina y optenemos el comando para instalar "ngrok". Lo instalamos y configuramos el token que nos crea después de crear una cuenta. Con el comando "ngrok http 8000" nos ofrece un enlace que nos deja acceder a coolify desde esa dirección.
+
+\begin{center}
+    \includegraphics[height=7cm]{images/unbuntu6.png}
+\end{center}
+
+\vspace{2cm}
+\section{Creación de un proyecto}
+Dentro de "coolify" vamos a crear un proyecto nuevo y le ponemos el nombre que queramos.
+\begin{center}
+    \includegraphics[height=7cm]{images/unbuntu7.png}
+\end{center}
+
+Vamos a añadir un nuevo recurso que va a ser la base de datos mongo, tenemos que hacer que sea público por lo que ponemos el puerto que consideremos y guardamos los cambios.
+\begin{center}
+    \includegraphics[height=6cm]{images/unbuntu9.png}
+\end{center}
+
+Para ver que está correcto podemos arrancar la base de datos que hemos creado.
+
+\begin{center}
+    \includegraphics[height=6cm]{images/unbuntu8.png}
+\end{center}
+
+Ahora tenemos que añadir un nuevo recurso que va a ser el repositorio local de la práctica anterior de docker. Añadimos el enlace al repositorio, seleccionamos en que rama estamos y donde está nuestro archivo "Dockerfile" y el nomnbre que le tenemos.
+\begin{center}
+    \includegraphics[height=4.5cm]{images/unbuntu10.png}
+\end{center}
+
+Si todo está correcto, guardamos todo y lo ejecutamos. 
+
+\begin{center}
+    \includegraphics[height=8cm]{images/unbuntu12.png}
+\end{center}
+
+Para comprobar que funciona la api, accedemos al dominio que nos crea al arrancarlo pero tenemos que cambiar la ip dentro del dominio y poner la ip de nuestra máquina virtual, lo guardamos y la abrimos en otra página. Si nos sale este estilo de mensaje es que se ha conectado correctamente. 
+
+\begin{center}
+    \includegraphics[height=2.5cm]{images/unbuntu13.png}
+\end{center}
+
+\vspace{0.2cm}
+\section{Puente inverso}
+Hacer que cualquiera desde fuera se pudiera conectar desde un dispositivo externo. Me ha dado problema y no he conseguido realizar el puente.
+
+
+\vspace{2cm}
+\section{Despliegue continuo}
+Implementar webhooks para que en el repositorio de GitHub reciba notificaciones en tiempo real cuando se realice eventos en GitHub. Para que el códugo se actualice solo sin tener que hacer "Redeploy" manualmente, hay que implementar webhooks de Github. Como en la máquina virtual no podemos acceder desde internet directamente, hay que usar el enlace de ngrok para usarlo de puente.
+
+\begin{center}
+    \includegraphics[height=5cm]{images/ubuntu10.png}
+\end{center}
+
+Primero, vamos a la pestaña de nuestra aplicación en Coolify y en el menú de la izquierda seleccionamos Webhooks. Copiamos la URL que nos da para GitHub. 
+
+\begin{center}
+    \includegraphics[height=5cm]{images/ubuntu11.png}
+\end{center}
+
+Luego, en el repositorio de GitHub, en los Settings > Webhooks y añadimos uno nuevo. En "Payload URL" pegamos la dirección de ngrok pero le añadimos al final la ruta que copiamos de Coolify. Ponemos el "Content type" en application/json, también seleccionar la opción para que funcione cuando haya un push y guardamos.
+
+\begin{center}
+    \includegraphics[height=5cm]{images/ubuntu12.png}
+\end{center}
+
+Si todo está correcto el Webhook funciona al aparecer un tick verde.
+
+\begin{center}
+    \includegraphics[height=8cm]{images/ubuntu13.png}
+\end{center}
+
+Ahora hay que realizar un push cambiando cualquier cosa, un comentario o algo.
+
+\begin{center}
+    \includegraphics[height=4cm]{images/ubuntu15.png}
+\end{center}
+
+Luego se puede ver que el push se ha realizado.
+
+\begin{center}
+    \includegraphics[height=3cm]{images/ubuntu16.png}
+\end{center}
+
+Al final vemos en Coolify dentro de el proyecto de nuestra API en el apartado de "Deployments" y vemos que se han realizado los pushs. 
+
+\begin{center}
+    \includegraphics[height=4cm]{images/ubuntu17.png}
+\end{center}
+
+\end{document}
